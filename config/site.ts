@@ -411,26 +411,32 @@ export const siteConfig = {
   /*  Every value is a hex colour.                                       */
   /* ------------------------------------------------------------------ */
   theme: {
-    /** Main text colour, near-black warm brown. */
-    ink: "#14100D",
-    /** Slightly lighter ink for large sub-headings. */
-    inkSoft: "#3A322C",
-    /** Body copy and secondary text. */
-    muted: "#6B6158",
-    /** Page background — warm off-white. */
-    ivory: "#FAF7F3",
-    /** Slightly deeper background for alternating sections. */
-    cream: "#F1EADF",
-    /** Borders, dividers, image mats. */
-    sand: "#E5DBCB",
-    /** Hairline rules. */
-    line: "#E2D8C9",
-    /** Primary accent — used for small labels and icons. */
-    brass: "#A9855C",
+    /**
+     * Main text colour — deep espresso brown, never pure or blue black.
+     * Warmth comes from red dominating blue by ~23 points.
+     */
+    ink: "#2A1D13",
+    /** Slightly lighter espresso for large sub-headings. */
+    inkSoft: "#463628",
+    /** Body copy and secondary text — warm taupe-brown. */
+    muted: "#71624F",
+    /**
+     * Page background — warm ivory leaning to creamy champagne.
+     * Deliberately not a neutral grey: red leads blue by ~22 points.
+     */
+    ivory: "#FAF3E4",
+    /** Slightly deeper warm beige for alternating sections. */
+    cream: "#F0E4C9",
+    /** Borders, dividers, image mats — warm taupe. */
+    sand: "#E7D6BC",
+    /** Hairline rules — soft champagne. */
+    line: "#E3D3B8",
+    /** Primary accent — muted antique brass, kept desaturated on purpose. */
+    brass: "#A8855A",
     /** Accent for text on light backgrounds (higher contrast). */
-    brassDeep: "#8A6A45",
-    /** Soft secondary accent. */
-    rose: "#C9A392",
+    brassDeep: "#80603A",
+    /** Soft secondary accent — warm clay, deliberately not pink. */
+    rose: "#C6A583",
   },
 } as const;
 

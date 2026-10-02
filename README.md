@@ -131,7 +131,15 @@ Colours are defined **once**, in `config/site.ts` under `theme`, and injected as
 CSS variables (`--lume-*`) that map to Tailwind utilities. So `bg-ivory`,
 `text-muted`, `border-line` etc. all follow the config automatically.
 
-Current palette: warm ivory background, espresso ink, brass accent, soft rose.
+Current palette: warm ivory background (`#FAF3E4`), deep espresso text
+(`#2A1D13`), warm taupe borders (`#E3D3B8`), and a muted antique brass accent
+(`#A8855A` / `#80603A`). Every value is a warm tone — red leads blue by 15–43
+points across the scale — so the site reads as ivory/espresso/champagne rather
+than grey/beige/black.
+
+All text colours meet WCAG AA (4.5:1) against both the ivory and cream
+backgrounds; `brassDeep` is additionally checked against cream, where eyebrow
+labels sit.
 
 To **add** a new colour: add it to `siteConfig.theme`, then map it in the
 `@theme inline` block at the top of `app/globals.css`.
